@@ -55,11 +55,21 @@
                 list-style: vstyle.$style-less;
                 width: 95%;
                 margin-bottom: 4vh;
+                li {
+                    position: relative;
+                }
+
                 li::before {
-                    content: "O";
-                    color:  vstyle.$back-element-color;
-                    padding-right: 10px;
-                    font-family: vstyle.$title-font;
+                    content: ""; 
+                    position: absolute;
+                    left: -20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid darkgreen;
+                    border-radius: 50%;
+                    }
                   }
             }
         }
@@ -73,7 +83,7 @@
             }
         }
     }
-}
+
 
 // actualites 
 
@@ -215,4 +225,20 @@
         }
     }
     
+}
+
+// organismes
+
+#organismes {
+    .organisme-support {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .organisme-image {
+            width: 20%;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

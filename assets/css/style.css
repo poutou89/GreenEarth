@@ -32,11 +32,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 6vh;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
-  font-size: 2vh;
+  font-size: 1.2rem;
 }
 
 .btn {
@@ -110,18 +118,26 @@ p {
   width: 95%;
   margin-bottom: 4vh;
 }
-#notremission .mission .mission-text .mission-list li::before {
-  content: "O";
-  color: #054D3B;
-  padding-right: 10px;
-  font-family: "DMSans-bold";
+#notremission .mission .mission-text .mission-list li {
+  position: relative;
 }
-#notremission .mission .mission-image {
+#notremission .mission .mission-text .mission-list li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border: 2px solid darkgreen;
+  border-radius: 50%;
+}
+#notremission .mission-image {
   display: flex;
   justify-content: center;
   width: 40%;
 }
-#notremission .mission .mission-image img {
+#notremission .mission-image img {
   width: 70%;
   border-radius: 10px;
 }
@@ -255,6 +271,18 @@ p {
   background-color: white;
 }
 
+#organismes .organisme-support {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#organismes .organisme-support .organisme-image {
+  width: 20%;
+}
+#organismes .organisme-support .organisme-image img {
+  width: 100%;
+}
+
 .card-item {
   background-color: white;
   width: 26%;
@@ -300,6 +328,49 @@ p {
   width: 380px;
   height: 213.75px;
   border-radius: 10px;
+}
+
+footer {
+  background-color: #054D3B;
+}
+footer .container {
+  margin-bottom: 0;
+}
+footer .container .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer-top .footer-text,
+footer .container .footer-top .map {
+  display: flex;
+  width: 22%;
+  flex-direction: column;
+}
+footer .container .footer-top .footer-text h3,
+footer .container .footer-top .map h3 {
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+footer .container .footer-top .footer-text p,
+footer .container .footer-top .map p {
+  color: white;
+}
+footer .container .footer-top .footer-text ul,
+footer .container .footer-top .map ul {
+  padding: 0;
+}
+footer .container .footer-top .footer-text ul li,
+footer .container .footer-top .map ul li {
+  list-style: none;
+}
+footer .container .footer-top .footer-text ul li a,
+footer .container .footer-top .map ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .container p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

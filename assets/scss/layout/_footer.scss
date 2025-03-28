@@ -1,0 +1,49 @@
+@use "../abstract/variables" as vstyle;
+
+footer {
+
+    background-color: vstyle.$back-element-color;
+
+    .container {
+        margin-bottom: 0;
+
+            .footer-top {
+                display: flex;
+                justify-content: space-between;
+
+                .footer-text,
+                .map {
+                    display: flex;
+                    width: 22%;
+                    flex-direction: column;
+
+                    h3 {
+                        color: vstyle.$secondary-color;
+                        text-decoration: underline;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        color: vstyle.$secondary-color;
+                    }
+
+                    ul {
+                        padding: 0;
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                text-decoration: vstyle.$style-less;
+                                color: vstyle.$secondary-color;
+                            }
+
+                        }
+                    }
+                }
+            }
+        p {
+            color: vstyle.$secondary-color;
+        }
+    }
+}
