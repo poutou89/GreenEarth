@@ -1,0 +1,18 @@
+@use "../abstract/variables" as vstyle;
+
+body {
+    margin: 0 auto;
+    font-family: vstyle.$primary-font;
+    background-color: vstyle.$background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: vstyle.$title-font;
+}
+h1 {
+    font-size: 6vh;
+}
+
+p {
+    font-size: 2vh;
+}

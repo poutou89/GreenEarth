@@ -1,0 +1,19 @@
+@use "../abstract/variables" as vstyle;
+
+header {
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+        .logo {
+            width: 10%;
+            img {
+                width: 100%;
+            }
+        }
+        .btn-header {
+            background: linear-gradient(0.25turn, vstyle.$back-element-color, #779D29);
+        }
+    }
+}

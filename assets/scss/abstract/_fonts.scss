@@ -1,0 +1,11 @@
+@use "../abstract/variables" as vstyle;
+
+@font-face {
+    font-family: vstyle.$primary-font;
+    src: url(../fonts/DM_Sans/static/DMSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: vstyle.$title-font;
+    src: url(../fonts/DM_Sans/static/DMSans-bold.ttf);
+}

@@ -1,0 +1,9 @@
+@use "../abstract/variables" as vstyle;
+
+.video-container {
+    iframe {
+        width: 380px;
+        height: 213.75px;
+        border-radius: vstyle.$bord-rad;
+    }
+}

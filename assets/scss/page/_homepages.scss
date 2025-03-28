@@ -1,0 +1,218 @@
+@use "../abstract/variables" as vstyle;
+
+.presentation {
+    display: flex;
+    gap: 1rem;
+    .presentation-text {
+        width: 50%;
+        h1 {
+            margin: 0;
+        }
+        p:first-of-type {
+            margin: 0;
+        }
+    }
+    .presentation-image {
+        width: 50%;
+        
+        img {
+            width: 100%;
+            box-shadow: 10px 10px 2px vstyle.$back-element-color;
+            border-top-left-radius: vstyle.$bord-rad;
+        }
+    }
+}
+
+// Nos projets
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+}
+
+// Notre mission
+
+#notremission {
+    background-image: url(../img/farmer-bg.jpg);
+    background-size: cover;
+    .mission {
+        display: flex;
+        align-items: center;
+        background-color: vstyle.$secondary-color;
+        padding: 5vh;
+        margin: 10vh 0;
+        border-radius: vstyle.$bord-rad;
+        .mission-text {
+            width: 60%;
+            .mission-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 1rem;
+                list-style: vstyle.$style-less;
+                width: 95%;
+                margin-bottom: 4vh;
+                li::before {
+                    content: "O";
+                    color:  vstyle.$back-element-color;
+                    padding-right: 10px;
+                    font-family: vstyle.$title-font;
+                  }
+            }
+        }
+        .mission-image {
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            img {
+                width: 70%;
+                border-radius: vstyle.$bord-rad;
+            }
+        }
+    }
+}
+
+// actualites 
+
+#actualites {
+    .actualites-main  {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        .actualites-top {
+            display: flex;
+            gap: 2vh;
+            .article-text {
+                width: 50%;
+                padding: 1rem;
+            }
+            .actualites-image {
+                width: 50%;
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: vstyle.$bord-rad;
+                }
+            }
+        }
+    }
+    .actualites-bottom {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+    }
+    a {
+        color: vstyle.$article-color;
+    }
+}
+
+// galerie
+.galerie-all {
+    display: grid;
+    grid-auto-rows: 200px;
+    gap: 1vh;
+    * {
+        width: 100%;
+        height: 100%;
+        border-radius: vstyle.$bord-rad;
+    }
+    .galerie-image1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        img {
+            object-fit: cover;
+        }
+    }
+    .galerie-image2 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        img {
+            object-fit: cover;
+        }
+    }
+    .galerie-image3 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        img {
+            object-fit: cover;
+        }
+    }
+    .galerie-image4 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        img {
+            object-fit: cover;
+        }
+    }
+    .galerie-image5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        img {
+            object-fit: cover;
+        }
+    }
+    .galerie-image6 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+// vidéos
+
+#videos {
+    h2 {
+        text-align: end;
+    }
+    .video {
+        display: flex;
+        justify-content: space-between;
+        width: 100%
+    }
+    .button-video {
+            display: flex;
+            text-align: center;
+   
+        .btn-video {
+            background-color: vstyle.$article-color;
+            margin: 4vh auto;
+        }
+     }
+}
+
+// donation
+
+#donation {
+    background-color: #799E29;
+    .donations {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .donation-text {
+        color: vstyle.$secondary-color;
+        }
+        .btn-donation {
+            color: vstyle.$back-element-color;
+            background-color: vstyle.$secondary-color;
+        }
+    }
+    
+}

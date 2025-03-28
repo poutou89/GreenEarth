@@ -1,0 +1,34 @@
+@use "../abstract/variables" as vstyle;
+
+.article {
+    background-color: vstyle.$secondary-color;
+    width: 30%;
+    position: relative;
+    border-radius: vstyle.$bord-rad;
+    .article-image {
+        padding: 0.8rem;
+        height: 20vh;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: vstyle.$bord-rad;
+        }
+    }
+    .article-text {
+        padding: 1rem;
+        h4 {
+            border: 1px solid vstyle.$background-color;
+            text-transform: uppercase;
+        }
+    }
+
+    &.article-text {
+        padding: 1rem;
+        h4 {
+            border: 1px solid vstyle.$background-color;
+            text-transform: uppercase;
+        }
+    }
+}
+
