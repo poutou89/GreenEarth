@@ -195,7 +195,9 @@
     .video {
         display: flex;
         justify-content: space-between;
-        width: 100%
+        width: 100%;
+
+        flex-wrap: wrap;
     }
     .button-video {
             display: flex;
