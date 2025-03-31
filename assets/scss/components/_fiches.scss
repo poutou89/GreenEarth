@@ -1,0 +1,9 @@
+@use "../abstract/variables" as vstyle;
+
+.fiches-item {
+    background-color: vstyle.$secondary-color;
+    text-align: center;
+    width: 33%;
+    box-shadow: 0 0 10px rgb(206, 205, 205);
+    border-radius: vstyle.$bord-rad;
+}

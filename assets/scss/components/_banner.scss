@@ -1,0 +1,6 @@
+@use "../abstract/variables" as vstyle;
+
+.banner {
+    background-color: vstyle.$back-element-color;
+    text-align: center;
+}

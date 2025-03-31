@@ -1,0 +1,125 @@
+@use "../abstract/variables" as vstyle;
+
+header {
+    .container {
+        margin-bottom: 0;
+    }
+}
+
+// banner
+
+#banner {
+    .container {
+        margin-top: 0;
+        h1 {
+            color: vstyle.$secondary-color;
+        }
+    }
+}
+
+// infos
+
+#infos {
+    .container {
+        .presentation {
+            align-items: center;
+            gap: 4vh;
+            .about-image {
+               width: 50%;
+                object-fit: cover;
+                img {
+                    width: 100%;
+                    box-shadow: 10px -10px 2px vstyle.$back-element-color;
+                    border-top-left-radius: vstyle.$bord-rad;
+                }
+            }
+        }
+    }
+}
+
+// humain
+
+#humain {
+    .container {
+        .humain-text {
+            text-align: center;
+        }
+        .fiches {
+            display: flex;
+            gap: 2vh;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            .fiches-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 50vh;
+                h3 {
+                    color: vstyle.$back-element-color;
+                }
+                p {
+                    font-size: 1rem;
+                    color: vstyle.$article-color;
+                }
+                .fiches-image {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// impact
+
+#impact
+    .container {
+        .impact-text {
+            text-align: center;
+        }
+        .impact-bottom {
+            
+            .impact-image {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                gap: 2vh;
+                
+                .impact-image-item {
+                    width: 50%;
+                    height: 40vh;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: vstyle.$bord-rad;
+                    }
+                }
+            }
+            .fiches {
+                display: flex;
+                gap: 2vh;
+                margin-top: 2vh;
+                .fiches-item {
+                    padding: 2vh;
+                }
+            }
+
+        }
+    }
+
+// donation 
+#donation {
+    background-color: vstyle.$back-element-color;
+}
