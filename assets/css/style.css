@@ -302,6 +302,11 @@ p {
   position: relative;
   border-radius: 10px;
 }
+.article .article-top {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
 .article .article-image {
   padding: 0.8rem;
   height: 20vh;
@@ -314,6 +319,9 @@ p {
 }
 .article .article-text {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .article .article-text h4 {
   border: 1px solid #FAF2E7;
@@ -321,6 +329,9 @@ p {
 }
 .article.article-text {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .article.article-text h4 {
   border: 1px solid #FAF2E7;

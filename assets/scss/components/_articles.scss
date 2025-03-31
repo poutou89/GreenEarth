@@ -5,6 +5,11 @@
     width: 30%;
     position: relative;
     border-radius: vstyle.$bord-rad;
+    .article-top {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
     .article-image {
         padding: 0.8rem;
         height: 20vh;
@@ -15,8 +20,12 @@
             border-radius: vstyle.$bord-rad;
         }
     }
+    
     .article-text {
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         h4 {
             border: 1px solid vstyle.$background-color;
             text-transform: uppercase;
@@ -25,6 +34,9 @@
 
     &.article-text {
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         h4 {
             border: 1px solid vstyle.$background-color;
             text-transform: uppercase;
