@@ -194,11 +194,16 @@
     }
     .video {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
-
+        gap: 2vh;
+        position: relative;
         flex-wrap: wrap;
+        .video-container {
+        }   
     }
+}
+    
     .button-video {
             display: flex;
             text-align: center;
@@ -208,7 +213,7 @@
             margin: 4vh auto;
         }
      }
-}
+
 
 // donation
 

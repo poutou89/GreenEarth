@@ -32,6 +32,7 @@
     .card {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         .card-item {
             width: 80%;
         }
@@ -116,13 +117,18 @@
     #videos {
         .video {
             align-items: center;
+            flex-direction: column;
             gap: 2vh;
             .video-container {
                 width: 100%;
+                display: flex;
+                justify-content: center;
+                    
                 iframe {
-                max-width: 100%;
-                max-height: 100%;
-                }
+                    width: 100vw; 
+    height: 56.25vw;
+                    }
+                
             }
         }
     }
@@ -151,8 +157,19 @@
     // footer 
 
     footer {
-        .footer-top  {
-            flex-direction: column;
+        .container {
+
+            .footer-top  {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .footer-text {
+                    width: inherit;
+                }
+                .map {
+                    width: inherit;
+                }   
+            }
         }
     }
 }
